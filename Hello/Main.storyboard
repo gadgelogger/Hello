@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GBG-a2-zHd">
-                                <rect key="frame" x="0.0" y="103" width="393" height="251.66666666666663"/>
+                                <rect key="frame" x="0.0" y="102.99999999999997" width="393" height="360.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-Rb-ZCC">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
@@ -67,7 +67,20 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSH-be-3qf">
                                         <rect key="frame" x="0.0" y="217.33333333333331" width="393" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Constrainsの練習"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Constrains(基本的な制約)の練習"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu7-5W-700" userLabel="コードで制約を付ける練習">
+                                        <rect key="frame" x="0.0" y="271.66666666666669" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="コードで制約を付ける練習"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ1-Ak-Jzn" userLabel="コードで制約を付ける練習">
+                                        <rect key="frame" x="0.0" y="326" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="クイズアプリ_おまけ"/>
+                                        <connections>
+                                            <segue destination="2bd-Pd-tq1" kind="show" id="oVB-9H-Q4t"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -115,6 +128,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMJ-Si-vIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="-17"/>
+        </scene>
+        <!--QuizView-->
+        <scene sceneID="C9j-06-cjM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="QuizView" id="2bd-Pd-tq1" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="gqy-Rv-d7A"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mzV-2Q-wXQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="994" y="193"/>
         </scene>
     </scenes>
     <resources>
