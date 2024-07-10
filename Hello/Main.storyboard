@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ua2-fT-MuE"/>
+                        <segue destination="Shg-yR-TGZ" kind="relationship" relationship="rootViewController" id="nzQ-no-eAi"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tdl-B3-VUm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-963" y="-28"/>
+            <point key="canvasLocation" x="-1654" y="132"/>
         </scene>
-        <!--View Controller-->
+        <!--ホーム-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
@@ -33,7 +33,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="GBG-a2-zHd">
-                                <rect key="frame" x="0.0" y="102.99999999999997" width="393" height="360.33333333333326"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="523.33333333333337"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWq-Rb-ZCC">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
@@ -74,12 +74,36 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="コードで制約を付ける練習"/>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ1-Ak-Jzn" userLabel="コードで制約を付ける練習">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZ1-Ak-Jzn" userLabel="クイズアプリ">
                                         <rect key="frame" x="0.0" y="326" width="393" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="クイズアプリ_おまけ"/>
                                         <connections>
                                             <segue destination="2bd-Pd-tq1" kind="show" id="oVB-9H-Q4t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qF-Yy-Cp3" userLabel="Hello">
+                                        <rect key="frame" x="0.0" y="380.33333333333331" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Hello"/>
+                                        <connections>
+                                            <segue destination="z3h-tv-vjq" kind="show" id="Kja-aQ-Gf6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0U-TF-168" userLabel="SNS">
+                                        <rect key="frame" x="0.0" y="434.66666666666663" width="393" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="SNS"/>
+                                        <connections>
+                                            <segue destination="kDe-1y-Uun" kind="show" id="sGE-hk-r1b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nq9-EA-Gmk" userLabel="Camera">
+                                        <rect key="frame" x="0.0" y="489" width="393" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Camera"/>
+                                        <connections>
+                                            <segue destination="i5F-1x-Xrt" kind="show" id="j21-L3-0x4"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -93,11 +117,59 @@
                             <constraint firstItem="GBG-a2-zHd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="zDf-ft-QhQ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="ホーム" image="house" catalog="system" id="0yP-Zk-SUM"/>
                     <navigationItem key="navigationItem" id="6Js-1e-5dm"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="16" y="-28"/>
+        </scene>
+        <!--設定-->
+        <scene sceneID="Bnw-OQ-QEi">
+            <objects>
+                <viewController id="xiD-aA-WID" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vqm-MG-pNp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="これは画面２やで" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-LZ-JcV">
+                                <rect key="frame" x="91.666666666666686" y="409" width="210" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c0A-L7-6KR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xuz-LZ-JcV" firstAttribute="centerX" secondItem="Vqm-MG-pNp" secondAttribute="centerX" id="Il6-J8-bKA"/>
+                            <constraint firstItem="Xuz-LZ-JcV" firstAttribute="centerY" secondItem="Vqm-MG-pNp" secondAttribute="centerY" id="fIZ-vj-s25"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="gear" catalog="system" id="gZB-Q4-Tpj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60B-qr-2RE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="801" y="620"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OSc-c3-QBf">
+            <objects>
+                <tabBarController id="Shg-yR-TGZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="h3h-rv-pCf"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IZX-P4-OdL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="LZo-2m-WbF"/>
+                        <segue destination="xiD-aA-WID" kind="relationship" relationship="viewControllers" id="QYM-oD-Vjz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tob-6D-TRB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-810" y="132"/>
         </scene>
         <!--StackView-->
         <scene sceneID="aaU-cF-nUd">
@@ -119,6 +191,16 @@
             </objects>
             <point key="canvasLocation" x="513" y="-173"/>
         </scene>
+        <!--SNSView-->
+        <scene sceneID="QHX-UI-p8T">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SNSView" id="kDe-1y-Uun" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Aau-8z-0Bu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wfZ-r5-0Hb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="933" y="-122"/>
+        </scene>
         <!--StorybordRefNavigation-->
         <scene sceneID="oDY-c9-UrS">
             <objects>
@@ -128,6 +210,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sMJ-Si-vIM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="832" y="-17"/>
+        </scene>
+        <!--Hello6View-->
+        <scene sceneID="qiZ-LQ-F7W">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Hello6View" id="z3h-tv-vjq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="UiG-ex-zjh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cji-Bp-bui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="802" y="56"/>
+        </scene>
+        <!--CameraView-->
+        <scene sceneID="H5R-a3-cN2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CameraView" id="i5F-1x-Xrt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KK2-7a-z0X"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dB1-LB-qEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1208" y="71"/>
         </scene>
         <!--QuizView-->
         <scene sceneID="C9j-06-cjM">
@@ -141,6 +243,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gear" catalog="system" width="128" height="122"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

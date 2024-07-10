@@ -11,6 +11,12 @@
 		2E43F54E2C3463950029DDB7 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E43F54D2C3463950029DDB7 /* QuizViewController.swift */; };
 		2E62E92B2C35C160006C05AE /* QuizCocoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62E92A2C35C160006C05AE /* QuizCocoaViewController.swift */; };
 		2E62E92F2C3682CD006C05AE /* QuizCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62E92E2C3682CD006C05AE /* QuizCard.swift */; };
+		2E62E9322C3D93AC006C05AE /* Hello6View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E62E9312C3D93AC006C05AE /* Hello6View.storyboard */; };
+		2E62E9342C3D99BD006C05AE /* Hello6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62E9332C3D99BD006C05AE /* Hello6ViewController.swift */; };
+		2E62E9372C3EEC7A006C05AE /* SNSView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E62E9362C3EEC7A006C05AE /* SNSView.storyboard */; };
+		2E62E9392C3EEC95006C05AE /* SNSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62E9382C3EEC95006C05AE /* SNSViewController.swift */; };
+		2E62E93C2C3F05C2006C05AE /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E62E93B2C3F05C2006C05AE /* CameraViewController.swift */; };
+		2E62E93E2C3F05CA006C05AE /* CameraView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E62E93D2C3F05CA006C05AE /* CameraView.storyboard */; };
 		2EAC3D1C2C2744B5008459E5 /* Sc1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAC3D1B2C2744B5008459E5 /* Sc1.storyboard */; };
 		2EAC3D1E2C2744C5008459E5 /* Sc2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EAC3D1D2C2744C5008459E5 /* Sc2.storyboard */; };
 		2EB98C942C16F0C5002A69D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EB98C932C16F0C5002A69D9 /* AppDelegate.swift */; };
@@ -29,6 +35,12 @@
 		2E43F54D2C3463950029DDB7 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		2E62E92A2C35C160006C05AE /* QuizCocoaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCocoaViewController.swift; sourceTree = "<group>"; };
 		2E62E92E2C3682CD006C05AE /* QuizCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCard.swift; sourceTree = "<group>"; };
+		2E62E9312C3D93AC006C05AE /* Hello6View.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Hello6View.storyboard; sourceTree = "<group>"; };
+		2E62E9332C3D99BD006C05AE /* Hello6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hello6ViewController.swift; sourceTree = "<group>"; };
+		2E62E9362C3EEC7A006C05AE /* SNSView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SNSView.storyboard; sourceTree = "<group>"; };
+		2E62E9382C3EEC95006C05AE /* SNSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNSViewController.swift; sourceTree = "<group>"; };
+		2E62E93B2C3F05C2006C05AE /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		2E62E93D2C3F05CA006C05AE /* CameraView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CameraView.storyboard; sourceTree = "<group>"; };
 		2EAC3D1B2C2744B5008459E5 /* Sc1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sc1.storyboard; sourceTree = "<group>"; };
 		2EAC3D1D2C2744C5008459E5 /* Sc2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Sc2.storyboard; sourceTree = "<group>"; };
 		2EB98C902C16F0C5002A69D9 /* Hello.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hello.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,10 +78,36 @@
 			path = Quiz;
 			sourceTree = "<group>";
 		};
+		2E62E9302C3D9397006C05AE /* Hello6 */ = {
+			isa = PBXGroup;
+			children = (
+				2E62E9312C3D93AC006C05AE /* Hello6View.storyboard */,
+				2E62E9332C3D99BD006C05AE /* Hello6ViewController.swift */,
+			);
+			path = Hello6;
+			sourceTree = "<group>";
+		};
+		2E62E9352C3EEC60006C05AE /* SNS */ = {
+			isa = PBXGroup;
+			children = (
+				2E62E9362C3EEC7A006C05AE /* SNSView.storyboard */,
+				2E62E9382C3EEC95006C05AE /* SNSViewController.swift */,
+			);
+			path = SNS;
+			sourceTree = "<group>";
+		};
+		2E62E93A2C3F05B3006C05AE /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2E62E93B2C3F05C2006C05AE /* CameraViewController.swift */,
+				2E62E93D2C3F05CA006C05AE /* CameraView.storyboard */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		2EAC67372C3303B800018344 /* CodeConstrains */ = {
 			isa = PBXGroup;
 			children = (
-				2EF254F32C2D965000A7A54B /* ScrollNavigation.storyboard */,
 			);
 			path = CodeConstrains;
 			sourceTree = "<group>";
@@ -93,6 +131,9 @@
 		2EB98C922C16F0C5002A69D9 /* Hello */ = {
 			isa = PBXGroup;
 			children = (
+				2E62E93A2C3F05B3006C05AE /* Camera */,
+				2E62E9352C3EEC60006C05AE /* SNS */,
+				2E62E9302C3D9397006C05AE /* Hello6 */,
 				2E43F54A2C34636D0029DDB7 /* Quiz */,
 				2EAC67372C3303B800018344 /* CodeConstrains */,
 				2EF254F22C2D962500A7A54B /* Scroll */,
@@ -122,6 +163,7 @@
 		2EF254F22C2D962500A7A54B /* Scroll */ = {
 			isa = PBXGroup;
 			children = (
+				2EF254F32C2D965000A7A54B /* ScrollNavigation.storyboard */,
 			);
 			path = Scroll;
 			sourceTree = "<group>";
@@ -192,13 +234,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E62E93E2C3F05CA006C05AE /* CameraView.storyboard in Resources */,
 				2EB98C9D2C16F0C6002A69D9 /* Assets.xcassets in Resources */,
 				2EAC3D1C2C2744B5008459E5 /* Sc1.storyboard in Resources */,
 				2E43F54C2C3463870029DDB7 /* QuizView.storyboard in Resources */,
+				2E62E9322C3D93AC006C05AE /* Hello6View.storyboard in Resources */,
 				2EB98CA02C16F0C6002A69D9 /* Base in Resources */,
 				2EF254F12C2B287600A7A54B /* Main.storyboard in Resources */,
 				2EF254FE2C30249E00A7A54B /* StackView.storyboard in Resources */,
 				2EB98C9B2C16F0C5002A69D9 /* Base in Resources */,
+				2E62E9372C3EEC7A006C05AE /* SNSView.storyboard in Resources */,
 				2EAC3D1E2C2744C5008459E5 /* Sc2.storyboard in Resources */,
 				2EF254F42C2D965000A7A54B /* ScrollNavigation.storyboard in Resources */,
 			);
@@ -213,10 +258,13 @@
 			files = (
 				2EB98C982C16F0C5002A69D9 /* ViewController.swift in Sources */,
 				2EB98C942C16F0C5002A69D9 /* AppDelegate.swift in Sources */,
+				2E62E9342C3D99BD006C05AE /* Hello6ViewController.swift in Sources */,
 				2E62E92F2C3682CD006C05AE /* QuizCard.swift in Sources */,
 				2E62E92B2C35C160006C05AE /* QuizCocoaViewController.swift in Sources */,
+				2E62E9392C3EEC95006C05AE /* SNSViewController.swift in Sources */,
 				2EB98C962C16F0C5002A69D9 /* SceneDelegate.swift in Sources */,
 				2E43F54E2C3463950029DDB7 /* QuizViewController.swift in Sources */,
+				2E62E93C2C3F05C2006C05AE /* CameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
