@@ -15,13 +15,40 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dhv-9X-eJc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="715"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0zd-xW-tYm">
+                                <rect key="frame" x="0.0" y="769" width="393" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="camera" id="CPd-nq-fT5">
+                                        <connections>
+                                            <action selector="launtchCamera:" destination="Y6W-OH-hqX" id="fZo-X5-noG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dhv-9X-eJc" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-44" id="1dy-cf-TIK"/>
+                            <constraint firstItem="0zd-xW-tYm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6nF-Pq-hIf"/>
+                            <constraint firstItem="dhv-9X-eJc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="VrQ-Gw-EaM"/>
+                            <constraint firstItem="0zd-xW-tYm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="eWU-H5-Dp4"/>
+                            <constraint firstItem="dhv-9X-eJc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="pEc-UI-NE9"/>
+                            <constraint firstItem="dhv-9X-eJc" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="qOM-Kt-rKs"/>
+                            <constraint firstItem="0zd-xW-tYm" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="uDc-5V-M3a"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="dhv-9X-eJc" id="J5s-e1-X0V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-28"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
