@@ -1,13 +1,13 @@
 //
-//  QuizViewController.swift
+//  TableViewController.swift
 //  Hello
 //
-//  Created by gadgelogger on 2024/07/18.
+//  Created by gadgelogger on 2024/07/17.
 //
 
 import UIKit
 
-class QuizViewController: UIViewController {
+class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
