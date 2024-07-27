@@ -9,10 +9,16 @@ import UIKit
 
 class QuizViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBAction func pressButton(_ sender: Any) {
+        self.label.text = "ボタンを押しました！"
+    }
+    var date = Date()
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     
 

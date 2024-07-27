@@ -25,6 +25,7 @@
 		2ED870A52C46C4FD00DF7BB9 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ED870A42C46C4FD00DF7BB9 /* TableView.storyboard */; };
 		2ED870A72C48F7F000DF7BB9 /* QuizView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ED870A62C48F7F000DF7BB9 /* QuizView.storyboard */; };
 		2ED870A92C48F7F800DF7BB9 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED870A82C48F7F800DF7BB9 /* QuizViewController.swift */; };
+		2ED870AB2C4B7C9E00DF7BB9 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ED870AA2C4B7C9E00DF7BB9 /* SettingViewController.swift */; };
 		2EF254F12C2B287600A7A54B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF254F02C2B287600A7A54B /* Main.storyboard */; };
 		2EF254F42C2D965000A7A54B /* ScrollNavigation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF254F32C2D965000A7A54B /* ScrollNavigation.storyboard */; };
 		2EF254FE2C30249E00A7A54B /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EF254FD2C30249E00A7A54B /* StackView.storyboard */; };
@@ -51,6 +52,7 @@
 		2ED870A42C46C4FD00DF7BB9 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		2ED870A62C48F7F000DF7BB9 /* QuizView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizView.storyboard; sourceTree = "<group>"; };
 		2ED870A82C48F7F800DF7BB9 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		2ED870AA2C4B7C9E00DF7BB9 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		2EF254F02C2B287600A7A54B /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		2EF254F32C2D965000A7A54B /* ScrollNavigation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollNavigation.storyboard; sourceTree = "<group>"; };
 		2EF254FD2C30249E00A7A54B /* StackView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StackView.storyboard; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		2EB98C872C16F0C5002A69D9 = {
 			isa = PBXGroup;
 			children = (
+				2ED870AA2C4B7C9E00DF7BB9 /* SettingViewController.swift */,
 				2EB98C922C16F0C5002A69D9 /* Hello */,
 				2EB98C912C16F0C5002A69D9 /* Products */,
 			);
@@ -270,6 +273,7 @@
 				2E62E9342C3D99BD006C05AE /* Hello6ViewController.swift in Sources */,
 				2ED870A92C48F7F800DF7BB9 /* QuizViewController.swift in Sources */,
 				2ED870A32C46C4F100DF7BB9 /* TableViewController.swift in Sources */,
+				2ED870AB2C4B7C9E00DF7BB9 /* SettingViewController.swift in Sources */,
 				2E62E9392C3EEC95006C05AE /* SNSViewController.swift in Sources */,
 				2EB98C962C16F0C5002A69D9 /* SceneDelegate.swift in Sources */,
 				2E62E93C2C3F05C2006C05AE /* CameraViewController.swift in Sources */,
@@ -427,6 +431,8 @@
 				DEVELOPMENT_TEAM = DC796ZJULC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hello/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影し、画面に表示します。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "撮影した写真を保存します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -455,6 +461,8 @@
 				DEVELOPMENT_TEAM = DC796ZJULC;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Hello/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "写真を撮影し、画面に表示します。";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "撮影した写真を保存します。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

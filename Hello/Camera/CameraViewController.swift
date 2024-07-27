@@ -8,11 +8,13 @@
 import UIKit
 
 class CameraViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    
+    //撮影した画像を表示するためのImageView
     @IBOutlet weak var imageView: UIImageView!
+    //カメラを起動するメソッド
     @IBAction func launtchCamera(_ sender: UIBarButtonItem) {
+        //カメラが利用可能かチェック
         let camera = UIImagePickerController.SourceType.camera
-        
+        //カメラを起動
         if UIImagePickerController.isSourceTypeAvailable(camera){
             let picker = UIImagePickerController()
             picker.sourceType = camera
@@ -20,6 +22,14 @@ class CameraViewController: UIViewController,UIImagePickerControllerDelegate,UIN
             self.present(picker,animated: true)
         }
     }
+    //撮影した画像を保存するメソッド
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        self.imageView.image = image
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+        self.dismiss(animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
