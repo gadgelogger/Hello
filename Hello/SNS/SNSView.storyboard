@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="snsImage" translatesAutoresizingMaskIntoConstraints="NO" id="AT8-Ga-ZWN">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StackImage" translatesAutoresizingMaskIntoConstraints="NO" id="vcU-Zf-8ba">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </imageView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Nd-Fo-gc9">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HdP-P8-RuK">
                                 <rect key="frame" x="0.0" y="769" width="393" height="49"/>
                                 <items>
-                                    <barButtonItem systemItem="action" id="YQi-f6-daF">
+                                    <barButtonItem title="Item" id="KNU-Sv-RE0">
                                         <connections>
-                                            <action selector="showActivityView:" destination="Y6W-OH-hqX" id="AnT-b9-aCH"/>
+                                            <action selector="showActivityView:" destination="Y6W-OH-hqX" id="yiU-2B-VcA"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -33,17 +33,17 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7Nd-Fo-gc9" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="167-ig-q0Z"/>
-                            <constraint firstItem="7Nd-Fo-gc9" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="4WG-ep-NYj"/>
-                            <constraint firstItem="AT8-Ga-ZWN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UZg-56-72Z"/>
-                            <constraint firstItem="AT8-Ga-ZWN" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="XJH-DO-Rfb"/>
-                            <constraint firstItem="AT8-Ga-ZWN" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="fqz-xx-8AC"/>
-                            <constraint firstItem="7Nd-Fo-gc9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lb6-O8-LXr"/>
-                            <constraint firstItem="AT8-Ga-ZWN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nWS-eQ-sEp"/>
+                            <constraint firstItem="vcU-Zf-8ba" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Hpl-wY-1Up"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vcU-Zf-8ba" secondAttribute="trailing" id="J8N-nA-VEK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HdP-P8-RuK" secondAttribute="bottom" id="PQt-Az-kMH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="vcU-Zf-8ba" secondAttribute="bottom" id="SG7-XE-bil"/>
+                            <constraint firstItem="HdP-P8-RuK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bks-vp-81A"/>
+                            <constraint firstItem="vcU-Zf-8ba" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="gYr-xN-uyU"/>
+                            <constraint firstAttribute="trailing" secondItem="HdP-P8-RuK" secondAttribute="trailing" id="u0z-PW-5e6"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="imageView" destination="AT8-Ga-ZWN" id="4Ai-Xj-NwN"/>
+                        <outlet property="imageView" destination="vcU-Zf-8ba" id="MJT-Fw-852"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -52,7 +52,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="snsImage" width="756" height="1344"/>
+        <image name="StackImage" width="3936" height="2216"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
