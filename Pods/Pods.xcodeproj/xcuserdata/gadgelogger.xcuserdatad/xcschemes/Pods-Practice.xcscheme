@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B08332B0C91F6CDC405644DADDB96E3C"
-               BuildableName = "LicensePlist"
-               BlueprintName = "LicensePlist"
+               BlueprintIdentifier = "C910732CD345180E5986DF1F6CD2A97C"
+               BuildableName = "Pods_Practice.framework"
+               BlueprintName = "Pods-Practice"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
